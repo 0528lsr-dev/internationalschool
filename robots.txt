@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /data/
+
+Sitemap: https://internationalschool.kr/sitemap.xml
+Sitemap: https://internationalschool.kr/sitemap-main.xml
+Sitemap: https://internationalschool.kr/sitemap-kr.xml
+Sitemap: https://internationalschool.kr/sitemap-abroad.xml
+Sitemap: https://internationalschool.kr/sitemap-teachers.xml
