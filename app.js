@@ -38,8 +38,8 @@
       if (cnt) {
         if (!v) cnt.innerHTML = '';
         else if (n) cnt.textContent = n + '개 학교';
-        else if (q.dataset.other) cnt.innerHTML = '없습니다 — <a href="' + q.dataset.other + '?q=' + encodeURIComponent(q.value) + '">' + q.dataset.otherName + '에서 찾기 →</a>';
-        else cnt.textContent = '없습니다';
+        else if (q.dataset.other) cnt.innerHTML = '목록에 없어도 수업 가능합니다 — <a href="/contact.html">상담 신청 →</a> · <a href="' + q.dataset.other + '?q=' + encodeURIComponent(q.value) + '">' + q.dataset.otherName + '에서 찾기</a>';
+        else cnt.innerHTML = '목록에 없어도 수업 가능합니다 — <a href="/contact.html">상담 신청 →</a>';
       }
     };
     q.addEventListener('input', run);
