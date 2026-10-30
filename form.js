@@ -28,8 +28,8 @@ var SITE_NAME = "국제학교튜터";
         읍면동: val(id+"_area"), 선생님성별: val(id+"_gender"), 남길말: val(id+"_memo"),
         신청페이지: location.origin + location.pathname,
         /* 영문 이름 — 티쳐포유 Apps Script 는 영문 키만 읽는다(2026-10-27). 한글 키와 같이 보낸다 */
-        name: val(id+"_name"), phone: val(id+"_phone"), grade: val(id+"_grade"), subject: val(id+"_subject"), address: val(id+"_area"),
-        memo: "학교: " + val(id+"_school") + (val(id+"_mode") ? " / " + val(id+"_mode") : "") + (val(id+"_gender") ? " / 선생님 " + val(id+"_gender") : "") + (val(id+"_memo") ? " / " + val(id+"_memo") : "") + " / " + location.pathname
+        name: "[" + SITE_NAME + "] " + val(id+"_name"), phone: val(id+"_phone"), grade: val(id+"_grade"), subject: val(id+"_subject"), address: val(id+"_area"),
+        memo: "[" + SITE_NAME + "] 학교: " + val(id+"_school") + (val(id+"_mode") ? " / " + val(id+"_mode") : "") + (val(id+"_gender") ? " / 선생님 " + val(id+"_gender") : "") + (val(id+"_memo") ? " / " + val(id+"_memo") : "") + " / " + location.pathname
       };
       var btn = form.querySelector('button[type="submit"]'); var orig = btn ? btn.textContent : "";
       if (btn) { btn.disabled = true; btn.textContent = "접수 중…"; }

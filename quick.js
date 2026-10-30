@@ -125,8 +125,8 @@ try { if (/[?&]nopop/.test(location.search)) sessionStorage.setItem('qpick', '1'
         남길말: '[간편선택] ' + memo,
         신청페이지: location.origin + location.pathname,
         /* 영문 이름 — 티쳐포유 Apps Script 는 영문 키만 읽는다(2026-10-27). 한글 키와 같이 보낸다 */
-        name: name, phone: phone, grade: grade, subject: subject, address: v('q_addr'),
-        memo: '[간편선택] 학교: ' + v('q_school') + (mode ? ' / ' + mode : '') + ' / ' + memo + ' / ' + location.pathname
+        name: '[' + C.site + '] ' + name, phone: phone, grade: grade, subject: subject, address: v('q_addr'),
+        memo: '[' + C.site + '][간편선택] 학교: ' + v('q_school') + (mode ? ' / ' + mode : '') + ' / ' + memo + ' / ' + location.pathname
       });
       if (C.ep) fetch(C.ep, {
         method: 'POST', mode: 'no-cors',
