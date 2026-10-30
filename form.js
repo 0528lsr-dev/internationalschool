@@ -1,6 +1,6 @@
 /* 국제학교튜터 — 상담 신청 → 구글 시트 "웹 문의" (허브 Apps Script, sheet=국제학교)  ※ 생성기 출력물(생성기 폴더) — 손으로 고치지 말 것
    탭 이름을 바꾸려면 sites.js 의 sheetTab 을 고치고 재생성. 오타가 나면 시트에 새 탭이 조용히 생긴다. */
-var SHEET_ENDPOINT = "https://script.google.com/macros/s/AKfycbzmPBaZvcyRX7RglHEz0z1XgFkXgmYv9TaQHjPE6ZynGTYAS8wIelh5lWVLhAHp5HSqdA/exec";
+var SHEET_ENDPOINT = "https://script.google.com/macros/s/AKfycbx7cFmG03i-dpfj7IWynETu5Z2af_dla1qaA-Kt8KbFF28H-4Re684VpmO7vBSeaILU/exec";
 var SHEET_TAB = "국제학교";
 var SITE_NAME = "국제학교튜터";
 (function(){
