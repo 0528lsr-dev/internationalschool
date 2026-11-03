@@ -35,6 +35,7 @@
 <li><a href="pages/국내국제학교찾기.html">국제학교 과외</a><div class="sub"><a href="pages/국내국제학교찾기.html">국내 국제학교 찾기</a><a href="pages/해외국제학교찾기.html">해외 국제학교 찾기</a><a href="regions.html">나라·지역별</a><a href="pages/수학과외-전체.html">과목별 과외</a></div></li>
 <li><a href="curriculum/index.html">커리큘럼</a><div class="sub"><a href="curriculum/ib.html">IB</a><a href="curriculum/ap.html">AP·미국식</a><a href="curriculum/igcse.html">IGCSE·A-Level</a><a href="curriculum/sat.html">SAT·TOEFL</a><a href="curriculum/admission.html">입학·편입</a></div></li>
 <li><a href="price.html">수강료</a></li>
+<li><a href="teachers.html" class="active">선생님</a></li>
 <li><a href="blog.html">수업 이야기</a></li>
 <li><a href="admissions.html">유학·입시정보</a></li>
 </ul>
@@ -52,14 +53,13 @@
 <p class="lead">UC 버클리·옥스퍼드·임페리얼·코넬 등 해외 명문대 출신 선생님들이 아이 학교 커리큘럼에 맞춰 1:1로 가르칩니다. IB 시험관 경력 선생님부터 영어로 수학·과학을 가르쳐 온 전문 강사까지, 상담 후 우리 아이에게 꼭 맞는 선생님을 골라 드립니다.</p>
 <p class="small muted">선생님 이름은 개인정보 보호를 위해 가려 표기합니다. 카드를 누르면 경력과 수업 정보가 나옵니다.</p>
 <div class="chips" style="margin-top:14px" data-filter="s"><button class="chip" aria-pressed="true" data-v="">전체 과목</button><button class="chip" data-v="수학">수학</button><button class="chip" data-v="영어">영어</button><button class="chip" data-v="과학">과학</button><button class="chip" data-v="사회">사회</button></div>
-<div class="chips" style="margin-top:8px" data-filter="c"><button class="chip" aria-pressed="true" data-v="">전체</button></div>
 <div class="chips" style="margin-top:8px" data-filter="sd"><button class="chip" aria-pressed="true" data-v="">전국</button></div>
 <p class="small muted" style="display:none"><span id="tcnt"></span></p>
 </div>
 </section>
 <section>
 <div class="wrap">
-<div class="t-grid" id="tgrid"><a class="t-card" href="t/T0001.html" data-s="영어,에세이" data-c="화상" data-sd="전국">
+<div class="t-scroll-wrap"><button type="button" class="t-arrow prev" aria-label="이전" onclick="this.parentNode.querySelector('.t-scroll').scrollBy({left:-300,behavior:'smooth'})">‹</button><div class="t-scroll" id="tgrid"><a class="t-card" href="t/T0001.html" data-s="영어,에세이" data-c="화상" data-sd="전국">
 <div class="t-top"><span class="t-photo t-ini">A</span><div><div class="t-name">A** 선생님</div><div class="t-meta">화상 · 전국 화상</div></div></div>
 <p class="t-tag">국제학교 영어·에세이 첨삭과 영어토론</p>
 <div class="t-sub"><b>영어</b><b>에세이</b><b>초등~성인</b></div>
@@ -183,7 +183,8 @@
 <div class="t-top"><span class="t-photo t-ini">박</span><div><div class="t-name">박O경 선생님</div><div class="t-meta">화상 · 전국 화상</div></div></div>
 <p class="t-tag">미국교과서 · 인터뷰</p>
 <div class="t-sub"><b>영어</b><b>입학준비</b><b>초등~고등</b></div>
-</a></div>
+</a></div><button type="button" class="t-arrow next" aria-label="다음" onclick="this.parentNode.querySelector('.t-scroll').scrollBy({left:300,behavior:'smooth'})">›</button></div>
+<p class="t-swipe">옆으로 넘겨 보세요 →</p>
 </div>
 </section>
 <section id="apply" class="soft">
