@@ -1,88 +1,82 @@
-/* 국제학교튜터 — 간편선택 팝업 (생성기 출력물: 생성기 폴더, 본문은 지역과외/quickpick.js 공용). 손으로 고치지 말 것. */
-window.QCFG={"ep":"https://script.google.com/macros/s/AKfycbx7cFmG03i-dpfj7IWynETu5Z2af_dla1qaA-Kt8KbFF28H-4Re684VpmO7vBSeaILU/exec","tab":"국제학교","site":"국제학교튜터","area":"","tel":"010-5577-3067","telRaw":"01055773067","hasVisit":true,"dongs":[],"tiles":[["수학과외","📐","IB·AP·IGCSE 수학, 영어로 된 문제까지"],["영어과외","📘","문학 분석과 영어 에세이"],["에세이과외","✍️","과제 에세이·EE·원서 에세이 구성"],["과학과외","🔬","랩 리포트와 영어 서술형"],["물리과외","⚛️","IB·AP Physics, 계산과 IA"],["화학과외","🧪","몰 계산부터 IB·AP Chemistry"],["생물과외","🧬","영어 용어와 자료 해석"],["경제과외","📊","그래프·사례·평가 서술"],["SAT과외","📝","디지털 SAT 영역별 진단"],["입학준비과외","🎒","배치고사·MAP·인터뷰 준비"],["대학 원서 에세이","🎓","Common App·UCAS 에세이 구성과 첨삭"]],"grades":["K~G2","G3","G4","G5","G6","G7","G8","G9","G10","G11","G12","입학 예정"],"links":[["국제학교 찾기","https://internationalschool.kr/pages/국내국제학교찾기.html"],["선생님 보기","https://internationalschool.kr/teachers.html"],["커리큘럼","https://internationalschool.kr/curriculum/index.html"]]};
+/* 국제학교튜터 — 간편 상담 팝업 (생성기 출력물: 생성기/공용/quick-intl.js). 손으로 고치지 말 것. */
+window.QCFG={"ep":"https://script.google.com/macros/s/AKfycbx7cFmG03i-dpfj7IWynETu5Z2af_dla1qaA-Kt8KbFF28H-4Re684VpmO7vBSeaILU/exec","tab":"국제학교","site":"국제학교튜터","tel":"010-5577-3067","telRaw":"01055773067","tiles":[["에세이 과외","✍️","영어 에세이 첨삭 전문 선생님이 배정됩니다"],["SAT 과외","📝","디지털 SAT 실전 전문 선생님이 배정됩니다"],["수학 과외","📐","알지브라·지오메트리부터 IB·AP 미적분까지 커리큘럼별 배정"],["과학 과외","🧪","Biology·Chemistry·Physics 전문 선생님 배정"],["일본 EJU 과외","🇯🇵","일본 대학 진학 EJU(수학·종합·이과)와 JLPT 준비를 안내해 드립니다"],["중국어 HSK 과외","🇨🇳","중화권 진학·HSK 급수(3~5급) 대비 중국어 과외를 안내해 드립니다"],["일상 영어회화","💬","원어민급 회화 전문 선생님과 1:1 화상·방문 수업"],["주재원 준비","✈️","출국 전 준비부터 현지 화상수업까지 안내해 드립니다"],["국제학교 입학 준비","🎓","배치고사·에세이·면접 준비를 안내해 드립니다"]],"grades":["초등 저학년","초등 고학년","중등 (G7~8)","G9~10","G11~12","학부모·기타"],"links":{"에세이 과외":[["에세이 과외 안내","https://internationalschool.kr/pages/에세이과외-전체.html"],["선생님 보기","https://internationalschool.kr/teachers.html"],["수강료 안내","https://internationalschool.kr/price.html"]],"SAT 과외":[["SAT 준비 안내","https://internationalschool.kr/curriculum/sat.html"],["선생님 보기","https://internationalschool.kr/teachers.html"],["수강료 안내","https://internationalschool.kr/price.html"]],"수학 과외":[["수학 과외 안내","https://internationalschool.kr/pages/수학과외-전체.html"],["선생님 보기","https://internationalschool.kr/teachers.html"],["수강료 안내","https://internationalschool.kr/price.html"]],"과학 과외":[["과학 과외 안내","https://internationalschool.kr/pages/과학과외-전체.html"],["선생님 보기","https://internationalschool.kr/teachers.html"],["수강료 안내","https://internationalschool.kr/price.html"]],"일본 EJU 과외":[["해외 국제학교 찾기","https://internationalschool.kr/pages/해외국제학교찾기.html"],["선생님 보기","https://internationalschool.kr/teachers.html"],["수강료 안내","https://internationalschool.kr/price.html"]],"중국어 HSK 과외":[["해외 국제학교 찾기","https://internationalschool.kr/pages/해외국제학교찾기.html"],["선생님 보기","https://internationalschool.kr/teachers.html"],["수강료 안내","https://internationalschool.kr/price.html"]],"일상 영어회화":[["선생님 보기","https://internationalschool.kr/teachers.html"],["수강료 안내","https://internationalschool.kr/price.html"],["유학·입시정보","https://internationalschool.kr/admissions.html"]],"주재원 준비":[["나라·지역별 국제학교","https://internationalschool.kr/regions.html"],["유학·입시정보","https://internationalschool.kr/admissions.html"],["수강료 안내","https://internationalschool.kr/price.html"]],"국제학교 입학 준비":[["입학 준비 안내","https://internationalschool.kr/curriculum/admission.html"],["우리 학교 찾기","https://internationalschool.kr/pages/국내국제학교찾기.html"],["유학·입시정보","https://internationalschool.kr/admissions.html"]],"기타":[["우리 학교 찾기","https://internationalschool.kr/pages/국내국제학교찾기.html"],["선생님 보기","https://internationalschool.kr/teachers.html"],["수강료 안내","https://internationalschool.kr/price.html"]]}};
 try { if (/[?&]nopop/.test(location.search)) sessionStorage.setItem('qpick', '1'); } catch (_) {}
 
 (function(){
   var C = window.QCFG;
-  var TILES = C.tiles, GRADES = C.grades;
-
-  function el(tag, cls, html){ var e = document.createElement(tag); if(cls) e.className = cls; if(html != null) e.innerHTML = html; return e; }
   function esc(s){ return String(s == null ? '' : s).replace(/[<>&"]/g, function(c){ return {'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c]; }); }
+  /* 한국 번호 판별(+82·0으로 시작=한국, 그 외 해외) */
+  function isKR(p){ var s = (p || '').replace(/[\s().\-]/g, ''); if (s.charAt(0) === '+') return /^\+82/.test(s); return /^0\d/.test(s); }
 
-  function build(){
-    var box = el('div', 'quick');
-    box.innerHTML =
-      '<button type="button" class="q-close" aria-label="닫기">✕</button>' +
-      '<div class="q-step q-s1 on">' +
-        '<div class="q-title">어떤 도움이 필요하세요?<small>과목만 고르시면 맞는 선생님을 찾아 연락드립니다</small></div>' +
-        '<div class="q-tiles">' +
-          TILES.map(function(t){
-            return '<button type="button" data-s="' + esc(t[0]) + '" data-h="' + esc(t[2]) + '"><b>' + t[1] + '</b>' + esc(t[0]) + '</button>';
-          }).join('') +
-        '</div>' +
+  var CSS = '.q-modal{display:none;position:fixed;inset:0;z-index:200;background:rgba(10,10,14,.62);backdrop-filter:blur(3px);align-items:center;justify-content:center;padding:20px}.q-modal.open{display:flex}' +
+    '.quick{position:relative;width:100%;max-width:560px;max-height:calc(100vh - 40px);overflow-y:auto;background:#211f26;color:#fff;border:1px solid rgba(255,255,255,.14);border-radius:18px;padding:22px 22px 20px;box-shadow:0 30px 80px rgba(0,0,0,.55)}' +
+    '.quick .q-close{position:absolute;top:10px;right:12px;background:none;border:none;color:#8c8f99;font-size:22px;line-height:1;cursor:pointer;font-family:inherit;padding:6px}.quick .q-close:hover{color:#fff}' +
+    '.q-open-btn{display:inline-flex;align-items:center;gap:8px;margin-top:18px;background:rgba(245,181,61,.12);border:1px solid rgba(245,181,61,.45);color:#c98a10;font-family:inherit;font-weight:800;font-size:14px;padding:11px 20px;border-radius:999px;cursor:pointer;transition:all .15s}.q-open-btn:hover{background:rgba(245,181,61,.22);transform:translateY(-1px)}' +
+    '.q-fab{position:fixed;left:18px;bottom:18px;z-index:60;background:#211f26;border:1px solid rgba(245,181,61,.55);color:#f5b53d;font-family:inherit;font-weight:800;font-size:13.5px;padding:12px 18px;border-radius:999px;cursor:pointer;box-shadow:0 8px 24px rgba(0,0,0,.35)}' +
+    '.quick .q-step{display:none}.quick .q-step.on{display:block}' +
+    '.quick .q-title{font-weight:900;font-size:17px;color:#fff;margin-bottom:13px}.quick .q-title small{display:block;font-weight:500;font-size:12.5px;color:#b8bac2;margin-top:3px}' +
+    '.quick .q-tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}' +
+    '.quick .q-tiles button{font-family:inherit;cursor:pointer;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);color:#fff;font-weight:700;font-size:13.5px;padding:13px 6px;border-radius:12px;line-height:1.35;transition:all .15s}' +
+    '.quick .q-tiles button:hover{border-color:#ef5a3c;background:rgba(239,90,60,.14);transform:translateY(-1px)}.quick .q-tiles button b{display:block;font-size:19px;margin-bottom:5px}' +
+    '.quick .q-etc{margin-top:11px;background:none;border:none;color:#9a9da8;font-size:12.5px;cursor:pointer;font-family:inherit;text-decoration:underline;text-underline-offset:3px;padding:2px}.quick .q-etc:hover{color:#f5b53d}' +
+    '.quick .q-back{background:none;border:none;color:#9a9da8;font-size:12.5px;cursor:pointer;font-family:inherit;padding:0;margin-bottom:9px}.quick .q-back:hover{color:#fff}' +
+    '.quick .q-chosen{font-weight:900;color:#f5b53d;font-size:15px;margin-bottom:3px}.quick .q-hint{color:#b8bac2;font-size:12.5px;margin-bottom:12px}' +
+    '.quick .q-grades{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:11px}' +
+    '.quick .q-grades button{font-family:inherit;cursor:pointer;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);color:#dfe0e5;font-size:12.5px;font-weight:700;padding:7px 12px;border-radius:999px}.quick .q-grades button.sel{background:#ef5a3c;border-color:#ef5a3c;color:#fff}' +
+    '.quick input,.quick textarea{width:100%;box-sizing:border-box;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-radius:10px;color:#fff;font-family:inherit;font-size:14px;padding:11px 13px;margin:0 0 8px}' +
+    '.quick input::placeholder,.quick textarea::placeholder{color:#8c8f99}.quick textarea{resize:none;height:58px}.quick input:focus,.quick textarea:focus{outline:none;border-color:#f5b53d}' +
+    '.quick .q-row2{display:flex;gap:8px}' +
+    '.quick .q-submit{width:100%;font-family:inherit;cursor:pointer;background:#ef5a3c;border:none;color:#fff;font-weight:900;font-size:15.5px;padding:14px;border-radius:12px;margin-top:3px}.quick .q-submit:hover{box-shadow:0 10px 22px rgba(239,90,60,.4)}' +
+    '.quick .q-done{text-align:center;padding:26px 8px}.quick .q-done b{display:block;color:#fff;font-size:17px;margin-bottom:7px}.quick .q-done p{color:#b8bac2;font-size:13.5px;line-height:1.7;margin:0}.quick .q-done p a{color:#f5b53d}' +
+    '.quick .q-links{margin-top:16px;padding-top:14px;border-top:1px solid rgba(255,255,255,.12)}.quick .q-lt{font-size:12.5px;color:#9a9da8;margin-bottom:9px}' +
+    '.quick .q-links a{display:inline-block;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.18);color:#fff;font-size:12.5px;font-weight:700;text-decoration:none;padding:8px 13px;border-radius:999px;margin:0 5px 6px 0}.quick .q-links a:hover{border-color:#f5b53d;color:#f5b53d}' +
+    '@media (max-width:640px){.quick .q-tiles{grid-template-columns:repeat(2,1fr)}.quick .q-tiles button:last-child{grid-column:1/-1}.q-fab{bottom:76px}}';
+
+  var HTML =
+    '<button type="button" class="q-close" aria-label="닫기">✕</button>' +
+    '<div class="q-step q-s1 on">' +
+      '<div class="q-title">어떤 도움이 필요하세요?<small>클릭 한 번이면 딱 맞는 선생님을 안내해 드립니다</small></div>' +
+      '<div class="q-tiles">' + C.tiles.map(function(t){ return '<button type="button" data-s="' + esc(t[0]) + '" data-h="' + esc(t[2]) + '"><b>' + t[1] + '</b>' + esc(t[0]) + '</button>'; }).join('') + '</div>' +
+      '<button type="button" class="q-etc" data-s="기타" data-h="필요하신 내용을 적어 주시면 전문가가 안내해 드립니다">찾는 게 없나요? 기타 문의 →</button>' +
+    '</div>' +
+    '<div class="q-step q-s2">' +
+      '<button type="button" class="q-back">← 다시 선택</button>' +
+      '<div class="q-chosen"></div><div class="q-hint"></div>' +
+      '<div class="q-grades">' + C.grades.map(function(g){ return '<button type="button">' + esc(g) + '</button>'; }).join('') + '</div>' +
+      '<div class="q-row2"><input type="text" id="q_name" placeholder="이름 *" autocomplete="name"><input type="tel" id="q_phone" placeholder="연락처 *" autocomplete="tel"></div>' +
+      '<input type="text" id="q_addr" placeholder="도로명 주소 (해외는 국가·도시만 대략 적어 주세요)" autocomplete="street-address">' +
+      '<input type="text" id="q_kakao" placeholder="카카오톡 ID (해외 번호는 꼭 적어 주세요)" style="display:none">' +
+      '<textarea id="q_memo" placeholder="원하시는 수업이나 궁금한 점을 편하게 적어 주세요 (선택)"></textarea>' +
+      '<button type="button" class="q-submit">상담 신청하기</button>' +
+    '</div>' +
+    '<div class="q-step q-s3">' +
+      '<div class="q-done"><b>✅ 신청이 접수되었습니다!</b><p>전문 선생님이 확인 후 곧 연락드리겠습니다.<br>급하시면 <a href="tel:' + C.telRaw + '">' + C.tel + '</a> 로 전화 주세요.</p>' +
+        '<div class="q-links"><div class="q-lt">연락 기다리는 동안 둘러보세요 👀</div><div class="q-llist"></div></div>' +
       '</div>' +
-      '<div class="q-step q-s2">' +
-        '<button type="button" class="q-back">← 다시 고르기</button>' +
-        '<div class="q-chosen"></div><div class="q-hint"></div>' +
-        '<span class="q-lbl">학년</span>' +
-        '<div class="q-chips q-grades">' + GRADES.map(function(g){ return '<button type="button">' + esc(g) + '</button>'; }).join('') + '</div>' +
-        (C.hasVisit ? '<span class="q-lbl">수업 방식</span><div class="q-chips q-modes"><button type="button">화상수업</button><button type="button">방문수업(국내)</button><button type="button">상관없음</button></div>' : '') +
-        '<span class="q-lbl">연락처</span>' +
-        '<div class="q-row2">' +
-          '<input type="text" id="q_name" placeholder="이름 *" autocomplete="name">' +
-          '<input type="tel" id="q_phone" placeholder="연락처 *" autocomplete="tel">' +
-        '</div>' +
-        /* 2026-10-04 사용자 요청: 학교·주소·특이사항 모두 필수 */
-        '<input type="text" id="q_school" placeholder="학교 * (예: 채드윅송도)">' +
-        '<input type="text" id="q_addr" placeholder="사는 곳 * (나라·도시)" autocomplete="street-address">' +
-        '<textarea id="q_memo" placeholder="특이사항 * (원하시는 요일·시간, 아이 상황 등)"></textarea>' +
-        '<button type="button" class="q-submit">바로 신청하기</button>' +
-      '</div>' +
-      '<div class="q-step q-s3">' +
-        '<div class="q-done"><b>✅ 신청이 접수되었습니다</b>' +
-          '<p>확인 후 곧 연락드리겠습니다.<br>급하시면 <a href="tel:' + C.telRaw + '">' + C.tel + '</a> 로 전화 주세요.</p>' +
-          '<div class="q-links"><div class="q-lt">연락 기다리는 동안 둘러보세요 👀</div><div class="q-llist">' +
-            C.links.map(function(l){ return '<a href="' + l[1] + '">' + esc(l[0]) + '</a>'; }).join('') +
-          '</div></div>' +
-        '</div>' +
-      '</div>';
-    return box;
-  }
+    '</div>';
 
   function init(){
-    var modal = el('div', 'q-modal');
-    var box = build();
-    modal.appendChild(box);
-    document.body.appendChild(modal);
-
+    var st = document.createElement('style'); st.textContent = CSS; document.head.appendChild(st);
+    var modal = document.createElement('div'); modal.className = 'q-modal';
+    var box = document.createElement('div'); box.className = 'quick'; box.innerHTML = HTML;
+    modal.appendChild(box); document.body.appendChild(modal);
     var s1 = box.querySelector('.q-s1'), s2 = box.querySelector('.q-s2'), s3 = box.querySelector('.q-s3');
-    var subject = '', grade = '', mode = '';
+    var subject = '', grade = '';
     function show(x){ [s1, s2, s3].forEach(function(e){ e.classList.remove('on'); }); x.classList.add('on'); }
     function open(){ modal.classList.add('open'); if (typeof gtag === 'function') gtag('event', 'quick_open'); }
     function close(){ modal.classList.remove('open'); }
 
-    /* 여는 버튼: 페이지에 #quickOpen 이 있으면 그것, 없으면 왼쪽 아래 작은 버튼 */
     var opener = document.getElementById('quickOpen');
     if (opener) opener.addEventListener('click', open);
-    else {
-      var fab = el('button', 'q-fab', '⚡ 어떤 도움이 필요하세요?');
-      fab.type = 'button';
-      fab.addEventListener('click', open);
-      document.body.appendChild(fab);
-    }
+    else { var fab = document.createElement('button'); fab.type = 'button'; fab.className = 'q-fab'; fab.textContent = '⚡ 간편 상담'; fab.addEventListener('click', open); document.body.appendChild(fab); }
     box.querySelector('.q-close').addEventListener('click', close);
     modal.addEventListener('click', function(e){ if (e.target === modal) close(); });
     document.addEventListener('keydown', function(e){ if (e.key === 'Escape') close(); });
 
-    /* 처음 들어온 방문자에게만 한 번 자동으로 연다(같은 방문 중에는 다시 열지 않음) */
-    try {
-      if (!sessionStorage.getItem('qpick')) {
-        sessionStorage.setItem('qpick', '1');
-        setTimeout(open, 1400);
-      }
-    } catch (_) {}
+    /* 처음 들어온 방문자에게 한 번 자동으로 연다(같은 방문 중 페이지를 옮겨도 다시 열지 않음) */
+    try { if (!sessionStorage.getItem('qpick')) { sessionStorage.setItem('qpick', '1'); setTimeout(open, 900); } } catch (_) {}
 
-    box.querySelectorAll('.q-tiles [data-s]').forEach(function(b){
+    box.querySelectorAll('[data-s]').forEach(function(b){
       b.addEventListener('click', function(){
         subject = b.getAttribute('data-s');
         box.querySelector('.q-chosen').textContent = subject;
@@ -91,52 +85,34 @@ try { if (/[?&]nopop/.test(location.search)) sessionStorage.setItem('qpick', '1'
         if (typeof gtag === 'function') gtag('event', 'quick_pick', { tile: subject });
       });
     });
+    var qPhone = document.getElementById('q_phone'), qKakao = document.getElementById('q_kakao');
+    function toggleKakao(){ qKakao.style.display = (qPhone.value.trim() !== '' && !isKR(qPhone.value)) ? '' : 'none'; }
+    qPhone.addEventListener('input', toggleKakao); qPhone.addEventListener('blur', toggleKakao);
     box.querySelector('.q-back').addEventListener('click', function(){ show(s1); });
-
-    function chips(sel, set){
-      var list = box.querySelectorAll(sel + ' button');
-      list.forEach(function(b){
-        b.addEventListener('click', function(){
-          list.forEach(function(x){ x.classList.remove('sel'); });
-          b.classList.add('sel'); set(b.textContent);
-        });
-      });
-    }
-    chips('.q-grades', function(v){ grade = v; });
-    if (C.hasVisit) chips('.q-modes', function(v){ mode = v; });
+    box.querySelectorAll('.q-grades button').forEach(function(g){
+      g.addEventListener('click', function(){ box.querySelectorAll('.q-grades button').forEach(function(x){ x.classList.remove('sel'); }); g.classList.add('sel'); grade = g.textContent; });
+    });
 
     box.querySelector('.q-submit').addEventListener('click', function(){
-      var btn = this;
-      var v = function(id){ var e = document.getElementById(id); return e ? e.value.trim() : ''; };
-      var name = v('q_name'), phone = v('q_phone');
-      var need = [['q_name', '이름'], ['q_phone', '연락처'], ['q_school', '학교'], ['q_addr', '주소'], ['q_memo', '특이사항']];
-      for (var i = 0; i < need.length; i++) {
-        if (!v(need[i][0])) { alert(need[i][1] + '을(를) 입력해 주세요.'); document.getElementById(need[i][0]).focus(); return; }
-      }
-      btn.disabled = true; btn.textContent = '접수 중…';
-      var memo = v('q_memo');
-      /* form.js 와 같은 항목 이름으로 보내야 같은 시트 칸에 들어간다  */
+      var v = function(id){ return document.getElementById(id).value.trim(); };
+      var name = v('q_name'), phone = v('q_phone'), kakao = v('q_kakao'), addr = v('q_addr'), memo = v('q_memo');
+      if (!name || !phone) { alert('이름과 연락처를 입력해 주세요.'); return; }
+      if (!isKR(phone) && !kakao) { qKakao.style.display = ''; qKakao.focus(); alert('한국 번호가 아니면 전화 연락이 어려워요.\n카카오톡 ID를 적어 주시면 빠르게 안내해 드립니다.'); return; }
+      var extra = (kakao ? '[카톡 ID] ' + kakao + ' / ' : '') + (addr ? '[주소] ' + addr + ' / ' : '') + memo;
+      /* form.js 와 같은 항목 이름 — 한글 키 + 영문 키(티쳐포유 Apps Script 는 영문 키만 읽는다) */
       var d = new URLSearchParams({
         sheet: C.tab, _form: C.site, _time: new Date().toLocaleString('ko-KR'),
-        사이트: C.site, 지역: C.area,
-        이름: name, 연락처: phone, 학교: v('q_school'),
-        학년: grade, 과목: subject, 수업방식: (mode || (C.hasVisit ? '' : '화상수업')),
-        주소: v('q_addr'), 선생님성별: '',
-        남길말: '[간편선택] ' + memo,
-        신청페이지: location.origin + location.pathname,
-        /* 영문 이름 — 티쳐포유 Apps Script 는 영문 키만 읽는다(2026-10-27). 한글 키와 같이 보낸다 */
-        name: '[' + C.site + '] ' + name, phone: phone, grade: grade, subject: subject, address: v('q_addr'),
-        memo: '[' + C.site + '][간편선택] 학교: ' + v('q_school') + (mode ? ' / ' + mode : '') + ' / ' + memo + ' / ' + location.pathname
+        사이트: C.site, 이름: name, 연락처: phone, 학년: grade, 과목: subject, 주소: addr,
+        남길말: '[간편상담] ' + extra, 신청페이지: location.origin + location.pathname,
+        name: '[' + C.site + '] ' + name, phone: phone, grade: grade, subject: subject, address: addr, kakao: kakao,
+        memo: '[' + C.site + '][간편상담] ' + extra + ' / ' + location.pathname
       });
-      if (C.ep) fetch(C.ep, {
-        method: 'POST', mode: 'no-cors',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8' },
-        body: d.toString()
-      }).catch(function(){});
+      if (C.ep) fetch(C.ep, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8' }, body: d.toString() }).catch(function(){});
       if (typeof gtag === 'function') gtag('event', 'quick_submit', { tile: subject, grade: grade });
+      var list = box.querySelector('.q-llist'); list.innerHTML = '';
+      (C.links[subject] || C.links['기타']).forEach(function(l){ var a = document.createElement('a'); a.textContent = l[0]; a.href = l[1]; list.appendChild(a); });
       show(s3);
     });
   }
-
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
 })();
