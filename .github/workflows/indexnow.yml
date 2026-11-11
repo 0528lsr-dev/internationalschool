@@ -1,0 +1,33 @@
+# 새 글·바뀐 글을 검색엔진에 바로 알리기 (IndexNow — 네이버·빙 등이 받는다) — 2026-11-11
+# main 에 push 될 때(매일 글 루틴·사이트 수정) 바뀐 글 주소만 골라 보낸다.
+# 학교 페이지(pages/)·선생님(t/)은 사이트를 다시 만들 때마다 수천 장이 같이 바뀌므로 빼고, 글·유학·주요 페이지만 보낸다.
+# 키 파일: /321f4d3d500d3436e38fdfde86ca72bc.txt (생성기 sites.js 의 indexnowKey)
+name: IndexNow 알림
+on:
+  push:
+    branches: [main]
+    paths: ['**.html']
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - name: 바뀐 글 주소 보내기
+        run: |
+          KEY=321f4d3d500d3436e38fdfde86ca72bc
+          HOST=internationalschool.kr
+          BEFORE="${{ github.event.before }}"
+          git cat-file -e "$BEFORE" 2>/dev/null || BEFORE=HEAD~1
+          URLS=$(git diff --name-only --diff-filter=AM "$BEFORE" HEAD -- '*.html' \
+            | grep -E '^(blog|admissions|study)/|^[^/]+\.html$' \
+            | grep -v -E '^(404|google|naver)[^/]*\.html$' \
+            | head -100 | sed "s#^#https://$HOST/#; s#/index\.html\$#/#")
+          if [ -z "$URLS" ]; then echo "보낼 주소 없음"; exit 0; fi
+          echo "$URLS"
+          LIST=$(echo "$URLS" | sed 's/.*/"&"/' | paste -sd, -)
+          for EP in https://api.indexnow.org/indexnow https://searchadvisor.naver.com/indexnow; do
+            curl -s -o /dev/null -w "$EP %{http_code}\n" -X POST "$EP" -H 'Content-Type: application/json; charset=utf-8' \
+              -d "{\"host\":\"$HOST\",\"key\":\"$KEY\",\"keyLocation\":\"https://$HOST/$KEY.txt\",\"urlList\":[$LIST]}"
+          done
