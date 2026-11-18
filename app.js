@@ -29,7 +29,7 @@
       cities.forEach(function(c){
         var cityHit = v && norm(c.querySelector('h3 a').textContent).indexOf(v) > -1, any = false;
         [].slice.call(c.querySelectorAll('.sgrid a')).forEach(function(a){
-          var ok = !v || cityHit || norm(a.textContent).indexOf(v) > -1;
+          var ok = !v || cityHit || norm(a.textContent + ' ' + (a.getAttribute('data-e') || '')).indexOf(v) > -1;
           a.classList.toggle('is-off', !ok); if (ok) { any = true; n++; }
         });
         c.classList.toggle('is-off', !any);
