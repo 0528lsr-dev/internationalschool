@@ -1,0 +1,36 @@
+# 국제고·국제중 급식·학사일정·시간표·개설 과목 매일 받아 오기 (나이스 교육정보 개방 포털) — 2026-11-19
+# .github/scripts/neis.py → data/neis/<학교>.json → special/<학교>-과외.html 이 열릴 때 읽어서 보여 준다.
+# 인증키: 저장소 secret NEIS_KEY. GitHub 예약 실행이 가끔 빠지므로 하루 세 번 시도한다(이미 오늘 받았으면 바뀐 게 없어 커밋 안 함).
+name: 나이스 학교 정보
+on:
+  schedule:
+    - cron: '13 20 * * *'   # 05:13 KST
+    - cron: '43 22 * * *'   # 07:43 KST
+    - cron: '27 2 * * *'    # 11:27 KST
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: neis
+  cancel-in-progress: false
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: 받아 오기
+        env:
+          NEIS_KEY: ${{ secrets.NEIS_KEY }}
+        run: python .github/scripts/neis.py
+      - name: 바뀐 게 있으면 올리기
+        run: |
+          git config user.name "neis-bot"
+          git config user.email "neis-bot@users.noreply.github.com"
+          git add data/neis
+          if git diff --cached --quiet; then echo "바뀐 것 없음"; exit 0; fi
+          git commit -m "나이스 학교 정보 $(TZ=Asia/Seoul date +%F)"
+          for i in 1 2 3; do git pull --rebase -q origin main && git push -q origin main && exit 0; sleep 5; done
+          exit 1
